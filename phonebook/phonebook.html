@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('https://pixsector.com/cache/e7836840/ave6d43d85eb121839a10.png');
+  background-position: 10px 12px;
+  background-color: white;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+
+<!--UI--!>
+.ui-bar-f {
+    color: light-gey;
+    background-color: #e5e2e4;}
+
+.ui-body-f {
+    font-weight: bold;
+    color: black;
+    background-color: #fcc5de;
+}
+
+.ui-page-theme-f {
+    font-weight: bold;
+    background-color: #ff89c0;;
+}
+
+
+
+</style>
+</head>
+<body >
+
+<div data-role="page" id="pageone" data-theme="f">
+    
+    
+   <div data-role="panel" id="adelePage"> 
+        <div class="w3-container">
+        <h2>Adele Pitt</h2>    
+        <div class="w3-padding w3-center">
+            <img src="https://www.vippng.com/png/detail/72-726826_png-file-person-icon-transparent.png" alt="Me" class="image" width="120" height="120" style="float: center; border-radius: 50%; ">
+        </div>
+        <p>Phone number: 773-528-7483</p>
+        <p>Address: 121 N. LaSalle Street
+        <br>Chicago, Illinois 60602 USA</p>
+        <p>Email: thebestadelepitt@gmail.com</p>
+        <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> </div>
+
+  <div data-role="panel" id="billyPage"> 
+    <div class="w3-container">
+    <h2>Billy Smith</h2>
+    <div class="w3-padding w3-center">
+        <img src="https://www.vippng.com/png/detail/72-726826_png-file-person-icon-transparent.png" alt="Me" class="image" width="120" height="120" style="float: center; border-radius: 50%; ">
+    </div>
+    <p>Phone number: 212-330-5200</p>
+    <p>Address: 350 Fifth Avenue
+    <br>New York, NY 10118-3299 USA</p>
+    <p>Email: theoneandonlybilly@gmail.com</p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> </div>
+
+  <div data-role="panel" id="BurchPage"> 
+    <div class="w3-container">
+    <h2>Burch Desiree</h2>
+    <div class="w3-padding w3-center">
+        <img src="https://www.vippng.com/png/detail/72-726826_png-file-person-icon-transparent.png" alt="Me" class="image" width="120" height="120" style="float: center; border-radius: 50%; ">
+    </div>
+    <p>Phone number: 212-330-5200</p>
+    <p>Address: 350 Fifth Avenue
+    <br>New York, NY 10118-3299 USA</p>
+    <p>Email: theoneandonlybilly@gmail.com</p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> </div>
+
+  <div data-role="panel" id="CampbellPage"> 
+    <div class="w3-container">
+    <h2>Campbell-Gillies,Tarryn</h2>
+    <div class="w3-padding w3-center">
+        <img src="https://www.vippng.com/png/detail/72-726826_png-file-person-icon-transparent.png" alt="Me" class="image" width="120" height="120" style="float: center; border-radius: 50%; ">
+    </div>
+    <p>Phone number: 212-330-5200</p>
+    <p>Address: 350 Fifth Avenue
+    <br>New York, NY 10118-3299 USA</p>
+    <p>Email: theoneandonlybilly@gmail.com</p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> </div>
+
+
+  <div data-role="panel" id="DesireePage"> 
+    <div class="w3-container">
+    <h2>Desiree Burch</h2>
+    <div class="w3-padding w3-center">
+        <img src="https://www.vippng.com/png/detail/72-726826_png-file-person-icon-transparent.png" alt="Me" class="image" width="120" height="120" style="float: center; border-radius: 50%; ">
+    </div>
+    <p>Phone number: 212-330-5200</p>
+    <p>Address: 350 Fifth Avenue
+    <br>New York, NY 10118-3299 USA</p>
+    <p>Email: theoneandonlybilly@gmail.com</p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> </div>
+ 
+  <div data-role="panel" id="EllawalaPage"> 
+    <div class="w3-container">
+    <h2>Ellawala, Ruveni</h2>
+    <div class="w3-padding w3-center">
+        <img src="https://www.vippng.com/png/detail/72-726826_png-file-person-icon-transparent.png" alt="Me" class="image" width="120" height="120" style="float: center; border-radius: 50%; ">
+    </div>
+    <p>Phone number: 212-330-5200</p>
+    <p>Address: 350 Fifth Avenue
+    <br>New York, NY 10118-3299 USA</p>
+    <p>Email: theoneandonlybilly@gmail.com</p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> </div>
+ 
+  <div data-role="panel" id="FrenchPage"> 
+    <div class="w3-container">
+    <h2>French, Tamzyn</h2>
+    <div class="w3-padding w3-center">
+        <img src="https://www.vippng.com/png/detail/72-726826_png-file-person-icon-transparent.png" alt="Me" class="image" width="120" height="120" style="float: center; border-radius: 50%; ">
+    </div>
+    <p>Phone number: 212-330-5200</p>
+    <p>Address: 350 Fifth Avenue
+    <br>New York, NY 10118-3299 USA</p>
+    <p>Email: theoneandonlybilly@gmail.com</p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> </div>
+
+
+
+
+
+
+  <!--HEADER-->
+  <div data-role="header" data-theme="f">
+    <h1>My Phone Book</h1>
+  </div>
+
+
+
+  <!--MAIN-->
+  <div data-role="main" class="ui-content ui-body-f">
+    
+    <h2>My Phonebook</h2>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <ul id="myUL">
+      <li><a href="#adelePage">Adele</a></li>
+      <li><a href="#billyPage">Billy</a></li>
+      <li><a href="#BurchPage">Burch</a></li>
+      <li><a href="#CampbellPage">Campbell</a>
+      <li><a href="#DesireePage">Desire</a>
+      <li><a href="#EllawalaPage">Ellawal</a>
+    <li><a href="#FrenchPage">French</a>
+    </li>
+    </ul>
+    
+  </div>
+    
+  <!--FOOTER-->
+    <div data-role="footer"  data-position="fixed">
+        <h1>Footer</h1>
+    </div>
+</div> 
+
+    <script>
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+    
+    
+
+
+
+</body>
+</html>

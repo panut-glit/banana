@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html lang="en">
+  <meta charset="UTF-8">
+  <title>Booking flight</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+    <style>
+      
+    body {
+    font-family:"Nanum Gothic"
+    h1,h2,h3,h4,h5,h6 {font-family:Nanum Gothic; letter-spacing:5px}
+    }
+
+    .hero-image {
+      background: url(https://images.unsplash.com/photo-1526402978125-f1d6df91cbac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1386&q=80) no-repeat center; 
+      background-size: cover;
+      height: 910px;
+      position: relative;
+}
+
+   
+    <!--form--!>
+      div.elem-group {
+        margin: 20px 0;
+        text-align:left;
+        
+      }
+      
+      div.elem-group.inlined {
+        
+        width: 24%;
+        display: inline-block;
+        float: left;
+        margin-left: 1%;
+      }
+      
+
+    div.elem-fiftypercent {
+        width: 49%;
+        display: inline-block;
+        float: left;
+        margin-left: 1%;
+
+        }
+      
+    input, select, textarea {
+        border-radius: 6px;
+        border: 2px solid rgb(161, 161, 161);
+        box-sizing: border-box;
+        font-size: 1.25em;
+        font-family: 'Nanum Gothic';
+        width: 100%;
+        padding: 5px;
+
+      }
+      
+      div.elem-group.inlined input {
+        width: 95%;
+        display: inline-block;
+      }
+      
+      textarea {
+        height: 65px
+      }
+      
+      hr {
+        border: 1px dotted #ccc;
+      }
+      
+      button {
+        height: 50px;
+        width: 100%;
+        background: black;
+        text-align: center;
+        border: none;
+        color: white;
+        font-size: 1.00em;
+        font-family: 'Nanum Gothic';
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        border: 2px solid rgb(201, 45, 118);
+        background: #ff81b5;
+      }
+
+        }
+<!--closeform-->
+    </style>
+</head>
+
+
+<body >
+
+    <!-- Navigation (Sits on top) -->
+    <div class="w3-top w3-bar w3-black w3-padding w3-card w3-wide ">
+    <a href="#home" class="w3-bar-item w3-button">Asia Airline</a>
+
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+    <a href="#about" class="w3-bar-item w3-button">About</a>
+    <a href="#menu" class="w3-bar-item w3-button">Check In</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+    </div>
+
+  
+  <!-- Start Content -->
+
+  <div class="hero-image"
+      <div class="hero-text">
+      
+
+
+  
+
+    <!-- About -->
+    <div id="about" class="w3-padding-top-64">
+
+      <div class="w3-third" style=>
+        <p style="color-transparent">A</p>
+      </div>
+
+      <div class="w3-third"> 
+        <div class="w3-content w3-round w3-card w3-padding-large w3-panel" style="background-color:transparent;">
+          <form action="reservation.php" method="post">
+
+            <div class="elem-group">
+              <h1 style="font-family :sans-serif;text-align: center; text-shadow:1px 1px 0 rgb(172, 169, 170);background-color:transparent;" >Travel with Asia Airline</h1>
+
+            </div>
+                <div class="elem-group">
+                <p style="font-family :sans-serif;font-weight : bold;">Your Name</p>
+                  <input type="text" id="name" name="passenger_name" placeholder="Jane Doe" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="elem-group">
+                <p style="font-family :sans-serif;font-weight : bold;">Email</p>
+                  <input type="email" id="email" name="passenger_email" placeholder="Jane.D@mail.com" required>
+                </div>
+                <div class="elem-group">
+                    <p style="font-family :sans-serif;font-weight : bold;">Your Phone</p>
+                  <input type="tel" id="phone" name="visitor_phone" placeholder="+66-XX-XXX-XXXX" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                </div>
+        
+            
+                <div class="elem-fiftypercent">
+                    <p style="font-family :sans-serif;font-weight : bold;">Flying from</p>
+                    <select id="location1" name="Flying fromrequired>
+                        <option value="Th">Thailand</option>
+                        <option value="Dollar">Singapore</option>
+                        <option value="Yen">Philippines</option>
+                        <option value="laos">Laos</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Germany">Germany</option>
+                        <option value="USA">USA</option>
+                        <option value="Italy">Italy</option>
+                        <option value="France">France</option>อ
+                        <option value="ustria">Austria</option>
+                    </select>
+                </div>
+        
+        
+                
+                <div class="elem-fiftypercent">
+                    <p style="font-family :sans-serif;font-weight : bold;">To</p>
+                    <select id="location2" name="To" required>
+                        <option value="Dollar">Singapore</option>
+                        <option value="Yen">Philippines</option>
+                        <option value="laos">Laos</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Germany">Germany</option>
+                        <option value="USA">USA</option>
+                        <option value="Italy">Italy</option>
+                        <option value="France">France</option>อ
+                        <option value="ustria">Austria</option>
+                    </select>
+                </div>
+        
+                
+        
+                <div class="elem-fiftypercent">
+                    <p style="font-family :sans-serif;font-weight : bold;">Departing</p>
+                    <input type="date" id="departing-date" name="departing" required>
+                  </div>
+          
+                <div class="elem-fiftypercent">
+                    <p style="font-family :sans-serif;font-weight : bold;">Returning</p>
+                    <input type="date" id="Returning-date" name="Returning" required>
+                </div>
+          
+                
+                <div class="w3-container">
+                <div class="elem-group inlined">
+                    <p style="font-family :sans-serif;font-weight : bold;">Adults</p>
+                  <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                </div>
+                <div class="elem-group inlined">
+                    <p style="font-family :sans-serif;font-weight : bold;">Children</p>
+                  <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                </div>
+                <div class="elem-group inlined">
+                    <p style="font-family :sans-serif;font-weight : bold;">Infant</p>
+                  <input type="number" id="infant" name="total_infant" placeholder="2" min="0" required>
+                </div>
+        
+                <div class="elem-group inlined">
+                    <p style="font-family :sans-serif;font-weight : bold;">Currency</p>
+                    <select id="Money type" name="Currncy" required>
+                        <option value="THB">THB</option>
+                        <option value="Dollar">USD</option>
+                        <option value="Yen">JPY</option>
+                        <option value=""Won"">Won</option>
+                    </select>
+                </div>
+              </div>
+                
+                
+                <div class="elem-group">
+                <p style="font-family :sans-serif;font-weight : bold; text-align:left;">Anything Else?</p> 
+                <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+                </div>
+                <button type="submit" style="font-family :sans-serif;font-weight : bold;" >SEARCH</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="w3-third w3-yellow">
+        
+      </div>
+  </div>
+</div>
+</div>
+<!--form-->
+      <script>
+        var currentDateTime = new Date();
+        var year = currentDateTime.getFullYear();
+        var month = (currentDateTime.getMonth() + 1);
+        var date = (currentDateTime.getDate() + 1);
+
+
+      if(date < 10) {
+      date = '0' + date;
+      }
+      if(month < 10) {
+      month = '0' + month;
+      }
+
+        var dateTomorrow = year + "-" + month + "-" + date;
+        var checkinElem = document.querySelector("#checkin-date");
+        var checkoutElem = document.querySelector("#checkout-date");
+
+      checkinElem.setAttribute("min", dateTomorrow);
+
+      checkinElem.onchange = function () {
+        checkoutElem.setAttribute("min", this.value);
+      }
+      </script>
+    <!--closeform-->
+</body>
+</html>
